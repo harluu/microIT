@@ -1,0 +1,17 @@
+<p>cal works!</p>
+<div class="calculator">
+  <h2>Angular Calculator</h2>
+
+  <input type="number" [(ngModel)]="num1" placeholder="Enter first number">
+  <input type="number" [(ngModel)]="num2" placeholder="Enter second number">
+
+  <div class="buttons">
+    <button (click)="calculate('+')">+</button>
+    <button (click)="calculate('-')">-</button>
+    <button (click)="calculate('*')">*</button>
+    <button (click)="calculate('/')">/</button>
+  </div>
+
+  <h3 *ngIf="result !== null">Result: {{ result }}</h3>
+</div>
+
